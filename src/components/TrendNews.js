@@ -18,7 +18,7 @@ const TrendNews = () => {
             }
         })
         setLoading(false)
-        setData(response.data.result[1])
+        setData(response.data.result[0])
     }
     useEffect(()=>{
         fetchData()

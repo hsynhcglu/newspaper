@@ -8,8 +8,8 @@ import { MdOutlineSaveAlt } from 'react-icons/md';
 const News = ({image,name,description}) => {
 
   return (
-        <div>
-            <img className='h-36 w-full mb-4' src={image} />
+        <div className='max-h-[450px]'>
+            <img className='w-full mb-4 h-60' src={image} />
             <h1 className='mb-2 font-bold'>{name}</h1>
             <p className='text-sm text-ellipsis overflow-hidden whitespace-nowrap'>{description}</p>
             <div className='flex space-x-4 text-gray-400 justify-center mt-8'>
