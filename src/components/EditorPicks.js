@@ -7,6 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper";
+import {Link} from 'react-router-dom'
 
 
 const EditorPicks = () => {
@@ -28,7 +29,6 @@ const EditorPicks = () => {
         fetchData()
     },[])
 
-
   return (
     <div className='container mx-auto mt-16 mb-8'>
         <div className='flex items-center space-x-4 mb-4'>
@@ -43,12 +43,12 @@ const EditorPicks = () => {
         }}
         modules={[Pagination]}
         className="mySwiper">
-            
+            {loading && <p>Loading...</p>}
             {data?.map((item) => {
                 return (
-                    <SwiperSlide>
+                    <SwiperSlide key={item.key}>
                         <div className='grid grid-cols-2 space-x-4'>
-                            <img className='w-full h-60 grid' src={item.image}></img>
+                            <img className='w-full h-60 grid' src={item.image} alt='newsimage'></img>
                             <div className='text-ellipsis overflow-hidden h-60'>
                                 <h1 className='text-xl font-semibold mb-4'>{item.name}</h1>
                                 <p className='text-sm'>{item.description}</p>

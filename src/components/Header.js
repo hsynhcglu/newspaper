@@ -12,7 +12,7 @@ const Header = () => {
             {/* <Link to='/corona'> Corona </Link> */}
             <ul className='flex space-x-16'>
                 <li className='font-medium'>
-                    <Link to='/corona'>Corona Updates</Link>
+                    <Link to='/'>Home</Link>
                 </li>
                 <li className='font-medium'>
                     <Link to='/politics'>Politics</Link>

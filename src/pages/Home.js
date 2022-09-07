@@ -37,9 +37,10 @@ const Home = () => {
         <div className='container mx-auto'>
           <div className='flex'>
             <div className='grid grid-cols-2 gap-6 w-4/6'>
+              {loading && <p>Loading...</p>}
               {data?.map((item) => {
                 return (
-                  <News key={item.key} image={item.image} name={item.name} description={item.description} />
+                  <News keya={item.key} key={item.key} image={item.image} name={item.name} description={item.description} source={item.source}/>
                 )
               })}
             </div>
@@ -49,7 +50,7 @@ const Home = () => {
                 <GoPrimitiveDot size={20}  className='text-red-600'/>
               </div>
               <div className='mb-8'>
-                <img className='w-full h-60' src={Lewis} />
+                <img className='w-full h-60' src={Lewis} alt='lewis' />
                 <h1 className='mt-4 text-2xl'>Lewis Hamilton on a Live</h1>
               </div>
               <LocationNews />
@@ -57,7 +58,6 @@ const Home = () => {
           </div>
         </div>
         <EditorPicks />
-        
     </div>
     <Footer />
     </div>
