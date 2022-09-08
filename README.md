@@ -1,5 +1,5 @@
 # NewsPaper Challenge
-## [Live Demo Coming Soon]()
+## [Live Demo](https://celadon-tartufo-ec4eb1.netlify.app)
 
 
 ## Used Technologies
