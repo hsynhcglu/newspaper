@@ -12,27 +12,14 @@ const Header = () => {
             {/* <Link to='/corona'> Corona </Link> */}
             <ul className='flex space-x-16'>
                 <li className='font-medium'>
-                    <Link to='/'>Home</Link>
+                    <Link to='/'>Anasayfa</Link>
                 </li>
                 <li className='font-medium'>
-                    <Link to='/politics'>Politics</Link>
+                    <Link to='/economy'>Ekonomi</Link>
                 </li>
                 <li className='font-medium'>
-                    <Link to='/business'>Business</Link>
+                    <Link to='/technology'>Teknoloji</Link>
                 </li>
-                <li className='font-medium'>
-                    <Link to='/sports'>Sports</Link>
-                </li>
-                <li className='font-medium'>
-                    <Link to='/world'>World</Link>
-                </li>
-                <li className='font-medium'>
-                    <Link to='/travel'>Travel</Link>
-                </li>
-                <li className='font-medium'>
-                    <Link to='/podcasts'>Podcasts</Link>
-                </li>
-                
             </ul>
             <div className='flex space-x-4'>
                 <AiOutlineUser size={25} />

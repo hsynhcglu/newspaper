@@ -10,14 +10,14 @@ import { BiDotsHorizontalRounded } from 'react-icons/bi';
 import Hashtags from './Hashtags';
 import Caroline from '../images/caroline.jpg';
 
-const NewsDetail = () => {
+const SportDetail = () => {
 
     const [loading,setLoading] = useState(false)
     const [data, setData] = useState()
 
     const fetchData=async ()=>{
         setLoading(true)
-        const response= await axios.get(`${API_URL}?country=tr&tag=general`,{
+        const response= await axios.get(`${API_URL}?country=tr&tag=technology`,{
             headers:{
                 authorization: API_TOKEN
             }
@@ -62,7 +62,7 @@ const NewsDetail = () => {
                   <button className='w-64 h-12 bg-red-600 text-white flex items-center justify-center'><AiOutlineMail size={25} />&nbsp; GET THIS NEWSLETTER</button>
                 </div>
                 <div className='flex space-x-4'>
-                  <Hashtags title='NBCBLK' />
+                  <Hashtags title='TECHNOLOGY' />
                   <Hashtags title='TRENDING' />
                   <Hashtags title='LEWIS' />
                   <Hashtags title='FREEBIE' />
@@ -101,4 +101,4 @@ const NewsDetail = () => {
   )
 }
 
-export default NewsDetail
+export default SportDetail

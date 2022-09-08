@@ -1,2 +1,2 @@
 export const API_URL = 'https://api.collectapi.com/news/getNews';
-export const API_TOKEN = 'apikey 7vOhu0AOjUVC8Wmj36vBsK:5KMKCzz0Xg0YPaNe6FjtH1';
+export const API_TOKEN = 'apikey 6BJCijJSElg8KWKRj9NNNV:2z7j67R0JDs7FtdMSQYmh7';
